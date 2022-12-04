@@ -1,22 +1,43 @@
-<template lang="">
+<!--******************
+    APP TEMPLATE
+***********************-->
 
-<main>
-  <div class="container">
+<template>
 
-  </div>
-</main>
+<header>
+  <TheNavbar></TheNavbar>
+</header>
+ 
 
+  <main>
+    <TopBunner></TopBunner>
+  </main>
+
+  <TheFooter></TheFooter>
+
+  <BottomBunner></BottomBunner>
 </template>
 
+
+<!--******************
+    APP SCRIPT
+***********************-->
+
 <script>
-import TheHeader from './components/TheHeader.vue';
+
+import TheNavbar from './components/TheNavbar.vue';
+import TopBunner from './components/TopBunner.vue';
 import TheFooter from './components/TheFooter.vue';
+import BottomBunner from './components/BottomBunner.vue';
+
 
 export default {
 
   components: {
-    TheHeader,
+    TheNavbar,
+    TopBunner,
     TheFooter,
+    BottomBunner
   },
 
   data() {
@@ -26,6 +47,18 @@ export default {
 }
 </script>
 
-<style lang="">
-  
+
+
+<!--******************
+    APP STYLE
+***********************-->
+
+<!-- non deve mai esservi lo scope nello style dell'App -->
+<style lang="scss">
+@use "./styles/general.scss" as *;
+
+*{
+/*   border: 1px solid yellowgreen */
+}
+
 </style>

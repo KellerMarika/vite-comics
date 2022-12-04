@@ -1,8 +1,8 @@
-<template>
+<template lang="">
+  to bunner: comic card-container
   <div>
-    header
+    
   </div>
-
 </template>
 
 <script>
@@ -11,6 +11,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="">
   
 </style>
