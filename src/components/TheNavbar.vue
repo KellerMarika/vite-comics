@@ -3,18 +3,20 @@
   <header class="bg-light">
   <nav class="container d-flex py-3">
 
-    <img class="nav-logo img-fluid" src="../assets/dc-logo.png" :alt="navLogoImg.name">
+    <img class="nav-logo img-fluid" :src="getImgUrl()" :alt="navLogoImg.name">
 
-    <ul class="list-group-flush flex-fill d-flex justify-content-end text-uppercase p-0 m-0">
-      <li class="list-group-item d-flex flex-column"
+    <ul class="list-group-flush flex-fill d-flex justify-content-end text-uppercase m-0">
+      
+      <li class="list-group-item"
       v-for="(link) in navLinks" >
-        <a class="d-inline-block px-3 py-4" 
-        :href="link.href">{{link.name}}
-        <div class="link-underline"></div>
-      </a>       
+        <a target="_blank" class="d-flex flex-column align-items-center h-100 px-3 pt-4 " 
+        :href="link.href" >
+
+          <div class="flex-fill">{{link.name}}</div>
+          <div class="link-underline"></div>
+        </a>       
       </li>
     </ul>
-   
   </nav>
 </header>
 </template>
@@ -75,20 +77,15 @@ export default {
   },
   methods: {
 
-     getImgUrl() {
+    getImgUrl() {
       return new URL(`../assets/${this.navLogoImg.name}.png`, import.meta.url)
-    } 
+    }
   }
-
 }
 </script>
 
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
-
-* {
-  border: 1px solid greenyellow
-}
 
 .nav-logo {
   width: 80px;
@@ -99,16 +96,22 @@ a {
   font-weight: 800;
   color: $secondary;
 
-  .link-underline {
-    background-color: red;
-    height: 8px;
-    width: 100%;
-  }
-
   &:hover,
   &:active {
     color: $primary
   }
 
+  .link-underline {
+    margin-bottom: -1.2rem;
+    background-color: $secondary;
+    height: 6px;
+    width: 0px;
+    transition: all .3s;
+  }
+
+  &:hover .link-underline{
+    background-color: $primary;
+    width: 100%;
+  }
 }
 </style>
