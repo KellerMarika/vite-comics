@@ -1,8 +1,8 @@
 <template>
-  <footer class="bg-footer">
-    <div class="container">
+  <footer class="bg-footer ">
+    <div class="container ">
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 py_m">
           <div class="row row-cols-3">
             <FooterCol1 class="col"></FooterCol1>
             <FooterCol2 class="col"></FooterCol2>
@@ -37,18 +37,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-
 .bg-footer {
   background-image: url(../assets/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: $secondary_light;
-/* 
-  h3 {
-    text-transform: uppercase;
-    color: $light;
-  } *//* ______________________________________________ */
 }
 
 .footer-dc-logo {
@@ -57,10 +49,16 @@ export default {
   background-size: cover;
   background-position: center;
 }
+</style>
 
-/* :::::::::::::::::::::::::::::::::::::::::::::: */
-* {
-  border: 1px solid rgb(64, 124, 253);
+<!-- style senza scope  _____________________________________________________ -->
 
+<style lang="scss">
+@use "../styles/partials/variables" as *;
+
+.bg-footer {
+  a {
+    color: $secondary_light;
+  }
 }
 </style>
