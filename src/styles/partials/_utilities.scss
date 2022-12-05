@@ -1,7 +1,13 @@
+@use "./variables" as *;
 
-/* @use "./variables" as *;
+/* utilities che si appoggiano a variabili */
 
-a{
-  text-decoration: none;
-  color: $_secondary ;
-}  */
+.py_s{
+  padding: $spacer_1 0;
+}
+.py_m{
+  padding: $spacer_2 0;
+}
+.py_l{
+  padding: $spacer_3 0;
+}

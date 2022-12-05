@@ -2,7 +2,7 @@
   <article class="top-bunner py_l">
     <div class="container">
       <!--   <img src="../assets/buy-comics-digital-comics.png" alt=""> -->
-      <ul class="list-group-flush d-flex justify-content-between  align-items-center m-0 p-0">
+      <ul class="list-group-flush d-flex justify-content-around  align-items-center m-0 p-0">
         <li class="list-group-item"
             v-for="(link, i) in bunnerLinks">
           <a class="d-flex align-items-center"  target="_blank" 

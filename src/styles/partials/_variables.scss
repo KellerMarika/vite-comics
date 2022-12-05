@@ -13,14 +13,3 @@ $spacer_2: 1.5rem;
 $spacer_3: ($spacer_2)*2;
 $spacer_1: ($spacer_2)/2;
 
-/* utilities che si appoggiano a variabili */
-
-.py_s{
-  padding: $spacer_1 0;
-}
-.py_m{
-  padding: $spacer_2 0;
-}
-.py_l{
-  padding: $spacer_3 0;
-}
