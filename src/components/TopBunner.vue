@@ -108,8 +108,8 @@ export default {
   }
   
   .link-img{
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 70px;
+    max-width: 70px;
     padding-right: $spacer_1;
   }
 }

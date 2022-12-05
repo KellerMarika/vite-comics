@@ -60,6 +60,7 @@ export default {
   a {
     color: $secondary_light;
     text-transform: capitalize;
+    font-size: small;
   }
 }
 </style>

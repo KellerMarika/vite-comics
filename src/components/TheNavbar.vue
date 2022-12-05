@@ -12,7 +12,7 @@
         <a target="_blank" class="d-flex flex-column align-items-center h-100 px-3 pt-4 " 
         :href="link.href" >
 
-          <div class="flex-fill">{{link.name}}</div>
+          <div class="flex-fill fs-6">{{link.name}}</div>
           <div class="link-underline"></div>
         </a>       
       </li>

@@ -10,7 +10,7 @@
 
           <li class="list-group-item"
               v-for="(link) in  socialLinks">
-            <a target="_blank" class="h-100 p-4"
+            <a target="_blank" class="h-100 p-2"
                 :href="link.href">
               <img :src="`/${link.name}.${link.format}`" :alt="(link.name)">
             </a>
@@ -75,7 +75,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .login-btn {
-  border: 4px solid $primary;
+  border: 2px solid $primary;
 }
-*{border: 1px solid red;}
+
 </style>
