@@ -4,12 +4,11 @@
 
 <template>
 
-<header>
   <TheNavbar></TheNavbar>
-</header>
- 
+
 
   <main>
+    <ComicContainer></ComicContainer>
     <TopBunner></TopBunner>
   </main>
 
@@ -26,6 +25,7 @@
 <script>
 
 import TheNavbar from './components/TheNavbar.vue';
+import ComicContainer from './components/ComicContainer.vue';
 import TopBunner from './components/TopBunner.vue';
 import TheFooter from './components/TheFooter.vue';
 import BottomBunner from './components/BottomBunner.vue';
@@ -35,6 +35,7 @@ export default {
 
   components: {
     TheNavbar,
+    ComicContainer,
     TopBunner,
     TheFooter,
     BottomBunner
@@ -57,8 +58,7 @@ export default {
 <style lang="scss">
 @use "./styles/general.scss" as *;
 
-*{
-/*   border: 1px solid yellowgreen */
+* {
+  /*   border: 1px solid yellowgreen */
 }
-
 </style>

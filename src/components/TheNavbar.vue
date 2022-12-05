@@ -1,7 +1,7 @@
-<template lang="">
+<template>
 
   <header class="bg-light">
-  <nav class="container d-flex py-3">
+  <nav class="container d-flex py_m pe-5">
 
     <img class="nav-logo img-fluid" :src="getImgUrl()" :alt="navLogoImg.name">
 
@@ -102,7 +102,7 @@ a {
   }
 
   .link-underline {
-    margin-bottom: -1.2rem;
+    margin-bottom: -1.5rem;
     background-color: $secondary;
     height: 6px;
     width: 0px;
