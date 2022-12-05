@@ -5,9 +5,7 @@
     <ul class=" m-0 p-0">
       <li class="list-group-item">
         <a v-for ="(link) in list.links" :href="link.href">{{link.name}}</a>
-
       </li>
-
     </ul>
   </div>
 

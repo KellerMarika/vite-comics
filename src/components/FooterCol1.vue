@@ -1,24 +1,35 @@
+
 <template>
-<div>
-  <ul>
-
-</ul>
-
-<ul>
-  
-</ul>
-</div>
+  <div>
+    <div v-for="(list) in linksLists">
+      <h3 class="text-uppercase text-light pt-3">{{ list.title }}</h3>
+      <ul class=" m-0 p-0">
+        <li class="list-group-item">
+          <a v-for="(link) in list.links" :href="link.href">{{ link.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
 </template>
 
 <script>
+import { col1_Lists } from '../composables/footerLinks';
 export default {
+  data() {
+    return {
+      linksLists: col1_Lists
+    }
+  },
+  mounted() {
+    console.log(this.linksLists)
+  }
+
 }
 </script>
 
 <style scoped lang="scss">
 * {
-  border: 1px solid rgb(3, 248, 44);
-  padding: 20px 0;
+  border: 1px solid rgb(248, 52, 3);
 }
 </style>
