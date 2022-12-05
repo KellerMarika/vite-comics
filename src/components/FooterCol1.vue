@@ -21,10 +21,6 @@ export default {
       linksLists: col1_Lists
     }
   },
-  mounted() {
-    console.log(this.linksLists)
-  }
-
 }
 </script>
 

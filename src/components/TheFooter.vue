@@ -59,6 +59,7 @@ export default {
 .bg-footer {
   a {
     color: $secondary_light;
+    text-transform: capitalize;
   }
 }
 </style>

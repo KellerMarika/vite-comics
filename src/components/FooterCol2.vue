@@ -19,10 +19,6 @@ export default {
       linksLists:col2_Lists
     }
   },
-  mounted(){
-    console.log(this.linksLists)
-  }
-
 }
 </script>
   
