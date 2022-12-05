@@ -99,10 +99,14 @@ export default {
 .top-bunner {
   background-color: $primary;
   color: $light;
+  .list-group-item{
+    flex-basis: calc(100% / 5);
+  }
 
   a {
     color: $light;
   }
+  
   .link-img{
     max-height: 50px;
     max-width: 50px;
