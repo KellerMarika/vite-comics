@@ -5,7 +5,7 @@
       <button class="login-btn text-uppercase text-light bg-transparent border-primary p-2"> sing-up now!</button>
 
       <div class="flex-fill d-flex align-items-center justify-content-end">
-        <h4 class="text-uppercase text-primary">follow Us</h4>
+        <h4 class="text-uppercase text-primary m-0">follow Us</h4>
         <ul class=" d-flex justify-content-end text-uppercase m-0">
 
           <li class="list-group-item"
@@ -77,4 +77,5 @@ export default {
 .login-btn {
   border: 4px solid $primary;
 }
+*{border: 1px solid red;}
 </style>
