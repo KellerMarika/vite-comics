@@ -58,7 +58,4 @@ export default {
 <style lang="scss">
 @use "./styles/general.scss" as *;
 
-* {
-  /*   border: 1px solid yellowgreen */
-}
 </style>

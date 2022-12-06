@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 .bg-footer {
   background-image: url(../assets/footer-bg.jpg);
   background-repeat: no-repeat;
@@ -49,6 +50,14 @@ export default {
   background-size: cover;
   background-position: center;
 }
+
+/* .bg-footer {
+  a {
+    color: $secondary_light;
+    text-transform: capitalize;
+    font-size: small;
+  }
+} */
 </style>
 
 <!-- style senza scope  _____________________________________________________ -->
@@ -63,4 +72,5 @@ export default {
     font-size: small;
   }
 }
+
 </style>
